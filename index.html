@@ -64,7 +64,7 @@
 </head>
 <body>
 <div class="wrap">
-  <a class="nav-link" href="https://sp2-kappa.vercel.app/">Lihat Dashboard Sp2 (Subspesialis) &rarr;</a>
+  <a class="nav-link" href="https://claude.ai/artifact/YaMWUs1qZ4J8qsPpzEFfzV">Lihat Dashboard Sp2 (Subspesialis) &rarr;</a>
   <header>
     <span class="tag" style="background:#dbeafe;color:#1d4ed8;">PROGRAM SPESIALIS (SP1)</span>
     <h1>Dashboard Program Studi Spesialis (Sp1)</h1>
@@ -154,7 +154,7 @@ function renderTable() {
     const color = ACC_COLORS[d.akreditasi] || '#94a3b8';
     return `<tr>
       <td>${d.no}</td>
-      <td class="prodi-name">${d.nama}</td>
+      <td class="prodi-name">${d.nama === 'Ilmu Penyakit Dalam' ? `<a href="https://interna-rho.vercel.app/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;text-decoration-color:#c7d2fe;">${d.nama} ↗</a>` : d.nama}</td>
       <td><span class="badge" style="background:${color}22;color:${color};">${d.akreditasi}</span></td>
       <td style="color:var(--muted);font-size:12.5px;">${d.nomor}</td>
     </tr>`;
